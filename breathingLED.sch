@@ -1,0 +1,434 @@
+EESchema Schematic File Version 4
+LIBS:breathingLED-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5D64DB58
+P 1000 2550
+F 0 "BT1" H 1118 2646 50  0000 L CNN
+F 1 "Battery_Cell" H 1118 2555 50  0000 L CNN
+F 2 "breathingLED:CoincellHolder" V 1000 2610 50  0001 C CNN
+F 3 "~" V 1000 2610 50  0001 C CNN
+	1    1000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V0 #PWR03
+U 1 1 5D64F68F
+P 2150 2050
+F 0 "#PWR03" H 2150 1900 50  0001 C CNN
+F 1 "+3V0" H 2165 2223 50  0000 C CNN
+F 2 "" H 2150 2050 50  0001 C CNN
+F 3 "" H 2150 2050 50  0001 C CNN
+	1    2150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5D6503F3
+P 1000 2800
+F 0 "#PWR01" H 1000 2550 50  0001 C CNN
+F 1 "GND" H 1005 2627 50  0000 C CNN
+F 2 "" H 1000 2800 50  0001 C CNN
+F 3 "" H 1000 2800 50  0001 C CNN
+	1    1000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2650 1000 2800
+Wire Wire Line
+	1000 2350 1000 2300
+$Comp
+L power:+3V0 #PWR05
+U 1 1 5D650BA8
+P 3700 1600
+F 0 "#PWR05" H 3700 1450 50  0001 C CNN
+F 1 "+3V0" H 3715 1773 50  0000 C CNN
+F 2 "" H 3700 1600 50  0001 C CNN
+F 3 "" H 3700 1600 50  0001 C CNN
+	1    3700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D65173C
+P 3100 1950
+F 0 "R1" H 3170 1996 50  0000 L CNN
+F 1 "47k" H 3170 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3030 1950 50  0001 C CNN
+F 3 "~" H 3100 1950 50  0001 C CNN
+	1    3100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D65249A
+P 3500 1950
+F 0 "R2" H 3570 1996 50  0000 L CNN
+F 1 "470k" H 3570 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3430 1950 50  0001 C CNN
+F 3 "~" H 3500 1950 50  0001 C CNN
+	1    3500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D652825
+P 3900 1950
+F 0 "R3" H 3970 1996 50  0000 L CNN
+F 1 "470k" H 3970 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 1950 50  0001 C CNN
+F 3 "~" H 3900 1950 50  0001 C CNN
+	1    3900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D652B3F
+P 4300 1950
+F 0 "R4" H 4370 1996 50  0000 L CNN
+F 1 "47k" H 4370 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4230 1950 50  0001 C CNN
+F 3 "~" H 4300 1950 50  0001 C CNN
+	1    4300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D652F27
+P 4950 2350
+F 0 "R5" V 5157 2350 50  0000 C CNN
+F 1 "220k" V 5066 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4880 2350 50  0001 C CNN
+F 3 "~" H 4950 2350 50  0001 C CNN
+	1    4950 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D653869
+P 5250 2650
+F 0 "R6" H 5320 2696 50  0000 L CNN
+F 1 "1M" H 5320 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5180 2650 50  0001 C CNN
+F 3 "~" H 5250 2650 50  0001 C CNN
+	1    5250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1800 3500 1800
+Wire Wire Line
+	3900 1800 3700 1800
+Connection ~ 3500 1800
+Wire Wire Line
+	4300 1800 3900 1800
+Connection ~ 3900 1800
+Wire Wire Line
+	3700 1800 3700 1600
+Connection ~ 3700 1800
+Wire Wire Line
+	3700 1800 3500 1800
+$Comp
+L Device:C C1
+U 1 1 5D658D75
+P 3300 2350
+F 0 "C1" V 3048 2350 50  0000 C CNN
+F 1 "10uF" V 3139 2350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3338 2200 50  0001 C CNN
+F 3 "~" H 3300 2350 50  0001 C CNN
+	1    3300 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D659694
+P 4100 2350
+F 0 "C2" V 4352 2350 50  0000 C CNN
+F 1 "10uF" V 4261 2350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4138 2200 50  0001 C CNN
+F 3 "~" H 4100 2350 50  0001 C CNN
+	1    4100 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 2100 3100 2350
+Wire Wire Line
+	3150 2350 3100 2350
+Connection ~ 3100 2350
+Wire Wire Line
+	3100 2350 3100 2650
+Wire Wire Line
+	3450 2350 3500 2350
+Wire Wire Line
+	3600 2350 3600 2850
+Wire Wire Line
+	3600 2850 4000 2850
+Wire Wire Line
+	3950 2350 3900 2350
+Wire Wire Line
+	3750 2350 3750 2600
+Wire Wire Line
+	3750 2600 3400 2600
+Wire Wire Line
+	3400 2600 3400 2850
+Wire Wire Line
+	3500 2100 3500 2350
+Connection ~ 3500 2350
+Wire Wire Line
+	3500 2350 3600 2350
+Wire Wire Line
+	3900 2100 3900 2350
+Connection ~ 3900 2350
+Wire Wire Line
+	3900 2350 3750 2350
+Wire Wire Line
+	4300 2100 4300 2350
+Wire Wire Line
+	4300 2350 4250 2350
+Wire Wire Line
+	4300 2350 4300 2650
+Connection ~ 4300 2350
+Wire Wire Line
+	4300 2350 4400 2350
+Wire Wire Line
+	4700 2350 4800 2350
+Wire Wire Line
+	5100 2350 5250 2350
+Wire Wire Line
+	5250 2350 5250 2500
+$Comp
+L Device:C C3
+U 1 1 5D65DDCE
+P 5500 2650
+F 0 "C3" H 5385 2604 50  0000 R CNN
+F 1 "10uF" H 5385 2695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5538 2500 50  0001 C CNN
+F 3 "~" H 5500 2650 50  0001 C CNN
+	1    5500 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 2500 5500 2350
+Wire Wire Line
+	5500 2350 5250 2350
+Connection ~ 5250 2350
+Wire Wire Line
+	5250 2800 5250 2900
+Wire Wire Line
+	5250 2900 5500 2900
+Wire Wire Line
+	5500 2900 5500 2800
+Wire Wire Line
+	5500 2350 5650 2350
+Connection ~ 5500 2350
+Wire Wire Line
+	4300 1800 5950 1800
+Wire Wire Line
+	5950 1800 5950 2150
+Connection ~ 4300 1800
+Wire Wire Line
+	5950 2550 5950 2650
+$Comp
+L power:GND #PWR04
+U 1 1 5D661E7F
+P 3100 3150
+F 0 "#PWR04" H 3100 2900 50  0001 C CNN
+F 1 "GND" H 3105 2977 50  0000 C CNN
+F 2 "" H 3100 3150 50  0001 C CNN
+F 3 "" H 3100 3150 50  0001 C CNN
+	1    3100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5D6623B8
+P 4300 3150
+F 0 "#PWR06" H 4300 2900 50  0001 C CNN
+F 1 "GND" H 4305 2977 50  0000 C CNN
+F 2 "" H 4300 3150 50  0001 C CNN
+F 3 "" H 4300 3150 50  0001 C CNN
+	1    4300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5D6628E3
+P 5950 3550
+F 0 "#PWR08" H 5950 3300 50  0001 C CNN
+F 1 "GND" H 5955 3377 50  0000 C CNN
+F 2 "" H 5950 3550 50  0001 C CNN
+F 3 "" H 5950 3550 50  0001 C CNN
+	1    5950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3050 3100 3150
+Wire Wire Line
+	4300 3050 4300 3150
+$Comp
+L Diode:1N4148 D1
+U 1 1 5D66455D
+P 4550 2350
+F 0 "D1" H 4550 2134 50  0000 C CNN
+F 1 "1N4148" H 4550 2225 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 4550 2175 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4550 2350 50  0001 C CNN
+	1    4550 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5D66A472
+P 5500 3150
+F 0 "#PWR07" H 5500 2900 50  0001 C CNN
+F 1 "GND" H 5505 2977 50  0000 C CNN
+F 2 "" H 5500 3150 50  0001 C CNN
+F 3 "" H 5500 3150 50  0001 C CNN
+	1    5500 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2900 5500 3150
+Connection ~ 5500 2900
+Wire Wire Line
+	5950 2950 5950 3150
+$Comp
+L Device:LED D2
+U 1 1 5D66BF44
+P 5950 3300
+F 0 "D2" V 5989 3182 50  0000 R CNN
+F 1 "GREEN" V 5898 3182 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5950 3300 50  0001 C CNN
+F 3 "~" H 5950 3300 50  0001 C CNN
+	1    5950 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 3450 5950 3550
+$Comp
+L Device:R R7
+U 1 1 5D653C8A
+P 5950 2800
+F 0 "R7" H 6020 2846 50  0000 L CNN
+F 1 "10" H 6020 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5880 2800 50  0001 C CNN
+F 3 "~" H 5950 2800 50  0001 C CNN
+	1    5950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5D6774BE
+P 1950 2300
+F 0 "SW1" H 1950 2585 50  0000 C CNN
+F 1 "SW_SPDT" H 1950 2494 50  0000 C CNN
+F 2 "slideswitches:JS102011SCQN" H 1950 2300 50  0001 C CNN
+F 3 "~" H 1950 2300 50  0001 C CNN
+	1    1950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5D59C60A
+P 1450 2400
+F 0 "Q1" H 1656 2446 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 1656 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 1650 2500 50  0001 C CNN
+F 3 "~" H 1450 2400 50  0001 C CNN
+	1    1450 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D5A672B
+P 1450 2700
+F 0 "#PWR02" H 1450 2450 50  0001 C CNN
+F 1 "GND" H 1455 2527 50  0000 C CNN
+F 2 "" H 1450 2700 50  0001 C CNN
+F 3 "" H 1450 2700 50  0001 C CNN
+	1    1450 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2600 1450 2700
+Wire Wire Line
+	1000 2300 1250 2300
+Wire Wire Line
+	1650 2300 1750 2300
+Wire Wire Line
+	2150 2200 2150 2050
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:BC847BLT1G Q2
+U 1 1 5D5B1361
+P 3200 2850
+F 0 "Q2" H 3387 2903 60  0000 L CNN
+F 1 "BC847BLT1G" H 3387 2797 60  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3400 3050 60  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF" H 3400 3150 60  0001 L CNN
+F 4 "BC847BLT1GOSCT-ND" H 3400 3250 60  0001 L CNN "Digi-Key_PN"
+F 5 "BC847BLT1G" H 3400 3350 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 3400 3450 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 3400 3550 60  0001 L CNN "Family"
+F 8 "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF" H 3400 3650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BC847BLT1G/BC847BLT1GOSCT-ND/917834" H 3400 3750 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 45V 0.1A SOT23" H 3400 3850 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 3400 3950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3400 4050 60  0001 L CNN "Status"
+	1    3200 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:BC847BLT1G Q3
+U 1 1 5D5B3A87
+P 4200 2850
+F 0 "Q3" H 4388 2903 60  0000 L CNN
+F 1 "BC847BLT1G" H 4388 2797 60  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4400 3050 60  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF" H 4400 3150 60  0001 L CNN
+F 4 "BC847BLT1GOSCT-ND" H 4400 3250 60  0001 L CNN "Digi-Key_PN"
+F 5 "BC847BLT1G" H 4400 3350 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4400 3450 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 4400 3550 60  0001 L CNN "Family"
+F 8 "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF" H 4400 3650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BC847BLT1G/BC847BLT1GOSCT-ND/917834" H 4400 3750 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 45V 0.1A SOT23" H 4400 3850 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 4400 3950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4400 4050 60  0001 L CNN "Status"
+	1    4200 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:BC847BLT1G Q4
+U 1 1 5D5B4F5A
+P 5850 2350
+F 0 "Q4" H 6038 2403 60  0000 L CNN
+F 1 "BC847BLT1G" H 6038 2297 60  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6050 2550 60  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF" H 6050 2650 60  0001 L CNN
+F 4 "BC847BLT1GOSCT-ND" H 6050 2750 60  0001 L CNN "Digi-Key_PN"
+F 5 "BC847BLT1G" H 6050 2850 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6050 2950 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6050 3050 60  0001 L CNN "Family"
+F 8 "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF" H 6050 3150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BC847BLT1G/BC847BLT1GOSCT-ND/917834" H 6050 3250 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 45V 0.1A SOT23" H 6050 3350 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 6050 3450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6050 3550 60  0001 L CNN "Status"
+	1    5850 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2150 2400
+$EndSCHEMATC
